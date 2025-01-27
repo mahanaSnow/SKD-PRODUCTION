@@ -28,6 +28,9 @@ export default defineConfig({
   server: {
     cors: "*",
     hmr: {},
+    allowedHosts: [
+      "starter.ngrok.app" // Remplace par l'URL générée par Ngrok
+    ],
   },
   build: {
     minify: true,

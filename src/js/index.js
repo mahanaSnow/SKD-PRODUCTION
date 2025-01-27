@@ -7,11 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
   initPageRouter();
 });
 
-import { VFX } from "@vfx-js/core";
+// import { VFX } from "@vfx-js/core";
 
-const imgs = document.querySelectorAll("img");
-const vfx = new VFX();
+// const imgs = document.querySelectorAll("img");
+// const vfx = new VFX();
 
-imgs.forEach((img) => {
-  vfx.add(img, { shader: "glitch", overflow: 100 });
-});
+// imgs.forEach((img) => {
+//   vfx.add(img, { shader: "glitch", overflow: 100 });
+// });
+
+console.log('hello')
