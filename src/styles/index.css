@@ -2,3 +2,72 @@ body {
   margin: 0;
   padding: 0;
 }
+
+
+
+:nth-child(1) { --i:1; }
+:nth-child(2) { --i:2; }
+:nth-child(3) { --i:3; }
+:nth-child(4) { --i:4; }
+:nth-child(5) { --i:5; }
+:nth-child(6) { --i:6; }
+:nth-child(7) { --i:7; }
+:nth-child(8) { --i:8; }
+:nth-child(9) { --i:9; }
+:nth-child(10) { --i:10; }
+
+ul {
+	--n:9;
+	--duration:40s;
+	--caro-tiltZ:12deg;
+	--caro-tiltX:4deg;
+	--caro-max-radius:22em;
+	--caro-radius:min( 40vw, var(--caro-max-radius) );
+	--caro-omtrek:calc( 2 * pi * var(--caro-radius) );
+	--item-size-bruto:calc( var(--caro-omtrek) / var(--n) );
+	--item-spacing:.2;
+	--item-size-netto:calc( var(--item-size-bruto) / (1 + var(--item-spacing)) );
+	--item-tiltX:2deg;
+	margin:0;
+	padding:0;
+	list-style-type:"";
+	display:grid;
+	transform-style:preserve-3d;
+}
+
+
+
+
+
+li {
+
+	--delay:calc( var(--duration) / var(--n) * var(--i) - var(--duration) );
+	grid-area:1/1;
+	width:var(--item-size-netto);
+	transform:
+		rotateZ( var(--caro-tiltZ) )
+		rotateX( var(--caro-tiltX) )
+		rotateY( var(--item-rotateY) )
+		translateZ( var(--caro-radius) )
+		rotateX( var(--item-tiltX) );
+	animation:
+		item-rotateY var(--duration) var(--delay) infinite linear;
+}
+
+@keyframes item-rotateY {
+	100% {
+		--item-rotateY:360deg;
+	}
+}
+
+@property --item-rotateY {
+	syntax:"<angle>";
+	inherits:true;
+	initial-value:0deg;
+}
+
+li img {
+	width: 100%;
+	mask: linear-gradient(145deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+	-webkit-mask: linear-gradient(145deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
