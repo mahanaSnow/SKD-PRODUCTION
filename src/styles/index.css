@@ -1,10 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
-
-
 :nth-child(1) { --i:1; }
 :nth-child(2) { --i:2; }
 :nth-child(3) { --i:3; }
@@ -34,9 +27,6 @@ ul {
 	display:grid;
 	transform-style:preserve-3d;
 }
-
-
-
 
 
 li {
@@ -70,4 +60,155 @@ li img {
 	width: 100%;
 	mask: linear-gradient(145deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 	-webkit-mask: linear-gradient(145deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+[data-filter] .lines-js {
+  overflow: hidden;
+}
+
+/* --------------  MARQUEE -----------------*/
+
+ .section-heading-block {
+  overflow: hidden;
+}
+
+.marquee {
+  --space: 1.5rem;
+  display: flex;
+  width: fit-content;
+  flex-shrink: 0;
+  white-space: nowrap;
+  will-change: transform;
+  padding-left: var(--space);
+  /* Déplacé ici */
+}
+
+.marquee::after {
+  content: attr(data-text);
+  padding-left: var(--space);
+}
+
+.section-heading-block .extra-large-text {
+  --time: 12s;
+  animation: marquee-animation var(--time) infinite linear;
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*------ row works---------*/
+
+
+.row-2.sentence {
+  color: var(--white-100);
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 0;
+  padding: 1rem .5rem;
+  background: linear-gradient(to bottom, #131315 0%, #131315 50%, transparent 50%, transparent 100%);    background-size: 100% 200%;
+  background-position: 0 100%;
+  transition: background-position 0.5s ease;
+}
+
+.row-2.sentence.active {
+  background-position: 0 0;
+}
+
+/* ------------ KINETIC --------------*/
+
+
+.pov {
+  width:100%;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.die {
+  width: 400px;
+  height: 55px;
+  padding-bottom: 9px;
+  perspective: 999px;
+}
+
+.cube {
+  position: absolute;
+  width:100%;;
+  height:100%;
+  transform-style: preserve-3d;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*   letter-spacing:-1px; */
+  backface-visibility: hidden;
+/*   overflow:hidden; */
+}
+
+
+/* ---------- Text reveal -------------*/
+
+[data-texture] {
+  opacity: 0;
+}
+
+[data-texture].revealed {
+  opacity: 1;
+}
+
+.wrapper {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+
+.template {
+  visibility: hidden;
+  line-height: 1;
+}
+
+.slice {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideIn 0.5s ease forwards;
+  line-height: 1;
+}
+
+.mask {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  line-height: 1;
+}
+
+.content {
+  position: relative;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

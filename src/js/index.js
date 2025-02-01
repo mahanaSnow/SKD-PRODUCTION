@@ -2,9 +2,13 @@
 
 import "../styles/index.css";
 import { initPageRouter } from "./utils/pageRouter";
-
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+gsap.registerPlugin(ScrollSmoother);
 document.addEventListener("DOMContentLoaded", () => {
   initPageRouter();
+  const smoother = ScrollSmoother.create({
+    smooth: 30,
+});
 });
 
 // import { VFX } from "@vfx-js/core";
@@ -15,5 +19,3 @@ document.addEventListener("DOMContentLoaded", () => {
 // imgs.forEach((img) => {
 //   vfx.add(img, { shader: "glitch", overflow: 100 });
 // });
-
-console.log('hello')
