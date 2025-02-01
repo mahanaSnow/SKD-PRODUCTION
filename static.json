@@ -1,0 +1,9 @@
+{
+  "root": "src/dist",
+  "clean_urls": true,
+  "headers": {
+    "/**": {
+      "Cache-Control": "no-cache"
+    }
+  }
+}
