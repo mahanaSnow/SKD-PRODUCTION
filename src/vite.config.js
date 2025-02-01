@@ -39,7 +39,7 @@ export default defineConfig({
     rollupOptions: {
       input: "/js/index.js",
       output: {
-        format: "life",
+        format: "umd",
         entryFileNames: "index.js",
         compact: true,
       },
