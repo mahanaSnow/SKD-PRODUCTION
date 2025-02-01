@@ -1,9 +1,19 @@
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
-gsap.registerPlugin(SplitText);
+import { Draggable } from "gsap/Draggable";
+
+gsap.registerPlugin(SplitText, Draggable);
 document.addEventListener("DOMContentLoaded", (event) => {
 const splitHeading = new SplitText(".hero-heading", { type: "chars" });
 const splitSub = new SplitText(".hero-sub", { type: "chars" });
+
+
+Draggable.create("#Drag", {
+  bounds: ".moodboard",
+  inertia: true,
+});
+
+console.log("dragagarrrr");
 
   const tl_loaded = gsap.timeline()
   .from('.nav-bar', { duration: 1, y:"-100", clipPath: 'inset(calc(50% - 4vw) round 4rem)', ease: 'power3.out' })
@@ -94,7 +104,7 @@ window.onload = window.onresize = ()=> {
 
 
 
-///////
+/////////////////// text animation /////////////////////////
 function initTextureReveal() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
