@@ -20,16 +20,13 @@
 //   envDir: "../",
 // };
 
-import { defineConfig } from "vite";
-import path from "path";
-
 export default defineConfig({
   root: "src",
   server: {
     cors: "*",
     hmr: {},
     allowedHosts: [
-      "starter.ngrok.app" // Remplace par l'URL générée par Ngrok
+      "starter.ngrok.app"
     ],
   },
   build: {
@@ -39,18 +36,17 @@ export default defineConfig({
     rollupOptions: {
       input: "/js/index.js",
       output: {
-        format: "umd",
+        format: "iife",  // Changé de "umd" à "iife"
         entryFileNames: "index.js",
         compact: true,
+        name: 'SKDProduction'  // Ajouté - nom de votre bundle global
       },
     },
   },
   envDir: "../",
-
-  // Add alias for better path resolution
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"), // Alias '@' maps to 'src'
+      "@": path.resolve(__dirname, "src"),
       "@animations": path.resolve(__dirname, "src/js/animations"),
       "@components": path.resolve(__dirname, "src/js/components"),
       "@pages": path.resolve(__dirname, "src/js/pages"),

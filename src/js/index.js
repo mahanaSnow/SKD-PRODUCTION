@@ -10,12 +10,4 @@ document.addEventListener("DOMContentLoaded", () => {
     smooth: 30,
 });
 });
-
-// import { VFX } from "@vfx-js/core";
-
-// const imgs = document.querySelectorAll("img");
-// const vfx = new VFX();
-
-// imgs.forEach((img) => {
-//   vfx.add(img, { shader: "glitch", overflow: 100 });
-// });
+console.log('prouttttt')
