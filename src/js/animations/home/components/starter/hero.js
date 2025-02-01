@@ -9,7 +9,6 @@ const splitHeading = new SplitText(".hero-heading", { type: "chars" });
 const splitSub = new SplitText(".hero-sub", { type: "chars" });
 
 //----------------- HERO LOADER ---------------------//
-
   const tl_loaded = gsap.timeline()
   .from('.nav-bar', { duration: 1, y:"-100", clipPath: 'inset(calc(50% - 4vw) round 4rem)', ease: 'power3.out' })
     .from('.hero-section', { duration: 3.6, clipPath: 'inset(calc(50% - 4vw) round 1rem)', ease: 'expo.inOut' }, "<")
