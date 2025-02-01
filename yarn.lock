@@ -3,24 +3,24 @@
 
 
 "@esbuild/linux-x64@0.21.5":
-  "integrity" "sha512-1rYdTpyv03iycF1+BhzrzQJCdOuAOtaqHTWJZCWvijKD2N5Xu0TtVC8/+1faWqcP9iBCWOmjmhoH94dH82BxPQ=="
-  "resolved" "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.21.5.tgz"
-  "version" "0.21.5"
+  version "0.21.5"
+  resolved "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.21.5.tgz"
+  integrity sha512-1rYdTpyv03iycF1+BhzrzQJCdOuAOtaqHTWJZCWvijKD2N5Xu0TtVC8/+1faWqcP9iBCWOmjmhoH94dH82BxPQ==
 
 "@ngrok/ngrok-linux-x64-gnu@1.4.1":
-  "integrity" "sha512-IfDaYd9ZGk7F0szHql5Tr3rlLBlhuKbbNXDVkujGy/njA4/YnckfsZilGEtgnR7aYgHo3NqppfEw+AOmlDytCw=="
-  "resolved" "https://registry.npmjs.org/@ngrok/ngrok-linux-x64-gnu/-/ngrok-linux-x64-gnu-1.4.1.tgz"
-  "version" "1.4.1"
+  version "1.4.1"
+  resolved "https://registry.npmjs.org/@ngrok/ngrok-linux-x64-gnu/-/ngrok-linux-x64-gnu-1.4.1.tgz"
+  integrity sha512-IfDaYd9ZGk7F0szHql5Tr3rlLBlhuKbbNXDVkujGy/njA4/YnckfsZilGEtgnR7aYgHo3NqppfEw+AOmlDytCw==
 
 "@ngrok/ngrok-linux-x64-musl@1.4.1":
-  "integrity" "sha512-Ze6wb2umg6hfJhxOrFQhiyIZOf9YjSRkefnaQdAaONrIKxiFsu5SIKQbp7MQRnm8wabB9i0OI0Q/TVBsxo/HLw=="
-  "resolved" "https://registry.npmjs.org/@ngrok/ngrok-linux-x64-musl/-/ngrok-linux-x64-musl-1.4.1.tgz"
-  "version" "1.4.1"
+  version "1.4.1"
+  resolved "https://registry.npmjs.org/@ngrok/ngrok-linux-x64-musl/-/ngrok-linux-x64-musl-1.4.1.tgz"
+  integrity sha512-Ze6wb2umg6hfJhxOrFQhiyIZOf9YjSRkefnaQdAaONrIKxiFsu5SIKQbp7MQRnm8wabB9i0OI0Q/TVBsxo/HLw==
 
 "@ngrok/ngrok@^1.4.1":
-  "integrity" "sha512-KZ7/T4UOY3BqJBdweJPeebKW34YzIH+a2y4o7yqTIowoi6dw3sMj140o1Q8FvpPbH5J6lr2TWVCWdgSTYvHNgw=="
-  "resolved" "https://registry.npmjs.org/@ngrok/ngrok/-/ngrok-1.4.1.tgz"
-  "version" "1.4.1"
+  version "1.4.1"
+  resolved "https://registry.npmjs.org/@ngrok/ngrok/-/ngrok-1.4.1.tgz"
+  integrity sha512-KZ7/T4UOY3BqJBdweJPeebKW34YzIH+a2y4o7yqTIowoi6dw3sMj140o1Q8FvpPbH5J6lr2TWVCWdgSTYvHNgw==
   optionalDependencies:
     "@ngrok/ngrok-android-arm-eabi" "1.4.1"
     "@ngrok/ngrok-android-arm64" "1.4.1"
@@ -37,31 +37,31 @@
     "@ngrok/ngrok-win32-x64-msvc" "1.4.1"
 
 "@rollup/rollup-linux-x64-gnu@4.32.0":
-  "integrity" "sha512-VDzNHtLLI5s7xd/VubyS10mq6TxvZBp+4NRWoW+Hi3tgV05RtVm4qK99+dClwTN1McA6PHwob6DEJ6PlXbY83A=="
-  "resolved" "https://registry.npmjs.org/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.32.0.tgz"
-  "version" "4.32.0"
+  version "4.32.0"
+  resolved "https://registry.npmjs.org/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.32.0.tgz"
+  integrity sha512-VDzNHtLLI5s7xd/VubyS10mq6TxvZBp+4NRWoW+Hi3tgV05RtVm4qK99+dClwTN1McA6PHwob6DEJ6PlXbY83A==
 
 "@rollup/rollup-linux-x64-musl@4.32.0":
-  "integrity" "sha512-qcb9qYDlkxz9DxJo7SDhWxTWV1gFuwznjbTiov289pASxlfGbaOD54mgbs9+z94VwrXtKTu+2RqwlSTbiOqxGg=="
-  "resolved" "https://registry.npmjs.org/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.32.0.tgz"
-  "version" "4.32.0"
+  version "4.32.0"
+  resolved "https://registry.npmjs.org/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.32.0.tgz"
+  integrity sha512-qcb9qYDlkxz9DxJo7SDhWxTWV1gFuwznjbTiov289pASxlfGbaOD54mgbs9+z94VwrXtKTu+2RqwlSTbiOqxGg==
 
 "@types/estree@1.0.6":
-  "integrity" "sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw=="
-  "resolved" "https://registry.npmjs.org/@types/estree/-/estree-1.0.6.tgz"
-  "version" "1.0.6"
+  version "1.0.6"
+  resolved "https://registry.npmjs.org/@types/estree/-/estree-1.0.6.tgz"
+  integrity sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==
 
 "@vfx-js/core@^0.6.0":
-  "integrity" "sha512-R9K+7K/0DISnww3oa/67y25XmnDL1GtWWxE61Oi1Y54vkMwJMi4t/hwq3ECp57VvpHBhPIQJPiyKCZBw1b4iYA=="
-  "resolved" "https://registry.npmjs.org/@vfx-js/core/-/core-0.6.0.tgz"
-  "version" "0.6.0"
+  version "0.6.0"
+  resolved "https://registry.npmjs.org/@vfx-js/core/-/core-0.6.0.tgz"
+  integrity sha512-R9K+7K/0DISnww3oa/67y25XmnDL1GtWWxE61Oi1Y54vkMwJMi4t/hwq3ECp57VvpHBhPIQJPiyKCZBw1b4iYA==
   dependencies:
-    "three" "^0.172.0"
+    three "^0.172.0"
 
-"esbuild@^0.21.3":
-  "integrity" "sha512-mg3OPMV4hXywwpoDxu3Qda5xCKQi+vCTZq8S9J/EpkhB2HzKXq4SNFZE3+NK93JYxc8VMSep+lOUSC/RVKaBqw=="
-  "resolved" "https://registry.npmjs.org/esbuild/-/esbuild-0.21.5.tgz"
-  "version" "0.21.5"
+esbuild@^0.21.3:
+  version "0.21.5"
+  resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.21.5.tgz"
+  integrity sha512-mg3OPMV4hXywwpoDxu3Qda5xCKQi+vCTZq8S9J/EpkhB2HzKXq4SNFZE3+NK93JYxc8VMSep+lOUSC/RVKaBqw==
   optionalDependencies:
     "@esbuild/aix-ppc64" "0.21.5"
     "@esbuild/android-arm" "0.21.5"
@@ -88,33 +88,33 @@
     "@esbuild/win32-x64" "0.21.5"
 
 "gsap@file:gsap-bonus.tgz":
-  "integrity" "sha512-lWXISP5Lbfj7GnCiAQApJsu8n0eVWzdyuIp8Yw0ON/CFH3vQn6eg4OlRnioQHR441FbrYJDKDKTB3sNx5fjo3w=="
-  "resolved" "file:gsap-bonus.tgz"
-  "version" "3.12.7"
+  version "3.12.7"
+  resolved "file:gsap-bonus.tgz"
+  integrity sha512-lWXISP5Lbfj7GnCiAQApJsu8n0eVWzdyuIp8Yw0ON/CFH3vQn6eg4OlRnioQHR441FbrYJDKDKTB3sNx5fjo3w==
 
-"nanoid@^3.3.8":
-  "integrity" "sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w=="
-  "resolved" "https://registry.npmjs.org/nanoid/-/nanoid-3.3.8.tgz"
-  "version" "3.3.8"
+nanoid@^3.3.8:
+  version "3.3.8"
+  resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.8.tgz"
+  integrity sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==
 
-"picocolors@^1.1.1":
-  "integrity" "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA=="
-  "resolved" "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz"
-  "version" "1.1.1"
+picocolors@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz"
+  integrity sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==
 
-"postcss@^8.4.43":
-  "integrity" "sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ=="
-  "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.5.1.tgz"
-  "version" "8.5.1"
+postcss@^8.4.43:
+  version "8.5.1"
+  resolved "https://registry.npmjs.org/postcss/-/postcss-8.5.1.tgz"
+  integrity sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==
   dependencies:
-    "nanoid" "^3.3.8"
-    "picocolors" "^1.1.1"
-    "source-map-js" "^1.2.1"
+    nanoid "^3.3.8"
+    picocolors "^1.1.1"
+    source-map-js "^1.2.1"
 
-"rollup@^4.20.0":
-  "integrity" "sha512-JmrhfQR31Q4AuNBjjAX4s+a/Pu/Q8Q9iwjWBsjRH1q52SPFE2NqRMK6fUZKKnvKO6id+h7JIRf0oYsph53eATg=="
-  "resolved" "https://registry.npmjs.org/rollup/-/rollup-4.32.0.tgz"
-  "version" "4.32.0"
+rollup@^4.20.0:
+  version "4.32.0"
+  resolved "https://registry.npmjs.org/rollup/-/rollup-4.32.0.tgz"
+  integrity sha512-JmrhfQR31Q4AuNBjjAX4s+a/Pu/Q8Q9iwjWBsjRH1q52SPFE2NqRMK6fUZKKnvKO6id+h7JIRf0oYsph53eATg==
   dependencies:
     "@types/estree" "1.0.6"
   optionalDependencies:
@@ -137,25 +137,25 @@
     "@rollup/rollup-win32-arm64-msvc" "4.32.0"
     "@rollup/rollup-win32-ia32-msvc" "4.32.0"
     "@rollup/rollup-win32-x64-msvc" "4.32.0"
-    "fsevents" "~2.3.2"
+    fsevents "~2.3.2"
 
-"source-map-js@^1.2.1":
-  "integrity" "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA=="
-  "resolved" "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz"
-  "version" "1.2.1"
+source-map-js@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz"
+  integrity sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==
 
-"three@^0.172.0":
-  "integrity" "sha512-6HMgMlzU97MsV7D/tY8Va38b83kz8YJX+BefKjspMNAv0Vx6dxMogHOrnRl/sbMIs3BPUKijPqDqJ/+UwJbIow=="
-  "resolved" "https://registry.npmjs.org/three/-/three-0.172.0.tgz"
-  "version" "0.172.0"
+three@^0.172.0:
+  version "0.172.0"
+  resolved "https://registry.npmjs.org/three/-/three-0.172.0.tgz"
+  integrity sha512-6HMgMlzU97MsV7D/tY8Va38b83kz8YJX+BefKjspMNAv0Vx6dxMogHOrnRl/sbMIs3BPUKijPqDqJ/+UwJbIow==
 
-"vite@^5.0.4":
-  "integrity" "sha512-EK5cY7Q1D8JNhSaPKVK4pwBFvaTmZxEnoKXLG/U9gmdDcihQGNzFlgIvaxezFR4glP1LsuiedwMBqCXH3wZccA=="
-  "resolved" "https://registry.npmjs.org/vite/-/vite-5.4.14.tgz"
-  "version" "5.4.14"
+vite@^5.0.4:
+  version "5.4.14"
+  resolved "https://registry.npmjs.org/vite/-/vite-5.4.14.tgz"
+  integrity sha512-EK5cY7Q1D8JNhSaPKVK4pwBFvaTmZxEnoKXLG/U9gmdDcihQGNzFlgIvaxezFR4glP1LsuiedwMBqCXH3wZccA==
   dependencies:
-    "esbuild" "^0.21.3"
-    "postcss" "^8.4.43"
-    "rollup" "^4.20.0"
+    esbuild "^0.21.3"
+    postcss "^8.4.43"
+    rollup "^4.20.0"
   optionalDependencies:
-    "fsevents" "~2.3.3"
+    fsevents "~2.3.3"

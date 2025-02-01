@@ -98,17 +98,13 @@ window.onload = window.onresize = ()=> {
 
 //----------------- DRAG --------------//
 gsap.utils.toArray("#Drag").forEach((drag) => {
-  let moodboard = document.querySelector(".moodboard");
-  let paddingLimit = 32; // 1rem = 16px
+  let moodboard = document.querySelector(".inner-moodboard");
+
 
   Draggable.create(drag, {
-    bounds: {
-      left: moodboard.offsetLeft + paddingLimit,
-      top: moodboard.offsetTop + paddingLimit,
-      width: moodboard.clientWidth - 2 * paddingLimit,
-      height: moodboard.clientHeight - 2 * paddingLimit
-    },
+    bounds:moodboard,
     inertia: true,
+    dragClickables: true,
   });
 });
 

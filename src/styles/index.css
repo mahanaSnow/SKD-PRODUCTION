@@ -113,8 +113,15 @@ li img {
   align-items: stretch;
   margin-top: 0;
   padding: 1rem .5rem;
-  background: linear-gradient(to bottom, #131315 0%, #131315 50%, transparent 50%, transparent 100%);    background-size: 100% 200%;
-  background-position: 0 100%;
+  background: linear-gradient(
+    to bottom,
+    #ff0b17 0%,
+    #97011c 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  background-size: 100% 200%;
+    background-position: 0 100%;
   transition: background-position 0.5s ease;
 }
 
@@ -211,4 +218,9 @@ li img {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+body.dragging {
+  touch-action: none;
+  overflow: hidden;
 }
