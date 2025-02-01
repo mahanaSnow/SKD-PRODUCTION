@@ -34,7 +34,7 @@ export default defineConfig({
   },
   build: {
     minify: true,
-    outDir: "../dist",
+    outDir: "../src/dist",
     emptyOutDir: true,
     rollupOptions: {
       input: "/js/index.js",
@@ -46,8 +46,6 @@ export default defineConfig({
     },
   },
   envDir: "../",
-
-
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
