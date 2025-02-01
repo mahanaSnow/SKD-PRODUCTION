@@ -34,7 +34,7 @@ export default defineConfig({
   },
   build: {
     minify: true,
-    outDir: "../src/dist",
+    outDir: "dist",
     emptyOutDir: true,
     rollupOptions: {
       input: "/js/index.js",
