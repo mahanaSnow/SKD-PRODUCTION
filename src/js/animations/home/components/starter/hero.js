@@ -110,7 +110,6 @@ gsap.utils.toArray("#Drag").forEach((drag) => {
 
 // --------------DRAG-Animation-ScrollTrigger-------------//
 
-
 gsap.from("#Drag", {
   scrollTrigger: {
     trigger: ".mood-wrapper",
