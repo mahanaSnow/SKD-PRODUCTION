@@ -14,6 +14,7 @@
   "dependencies": {
     "@ngrok/ngrok": "^1.4.1",
     "@vfx-js/core": "^0.6.0",
-    "gsap": "file:gsap-bonus.tgz"
+    "gsap": "file:gsap-bonus.tgz",
+    "serve": "^14.2.4"
   }
 }
