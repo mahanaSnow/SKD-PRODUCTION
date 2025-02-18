@@ -10,9 +10,7 @@ const splitSub = new SplitText(".hero-sub", { type: "chars" });
 
 //----------------- HERO LOADER ---------------------//
   const tl_loaded = gsap.timeline()
-  .from('.nav-bar', { duration: 1, y:"-100", clipPath: 'inset(calc(50% - 4vw) round 4rem)', ease: 'power3.out' })
-    .from('.hero-section', { duration: 3.6, clipPath: 'inset(calc(50% - 4vw) round 1rem)', ease: 'expo.inOut' }, "<")
-    .from('.hero-background-video', { duration: 3.6, clipPath: 'inset(50% round 1rem)', ease: 'expo.inOut' }, "<")
+  .from('.nav-bar', { duration: 1, y:"-100", ease: 'power3.out' })
     .from(splitSub.chars, {
       duration: 1,
       opacity: "0",
@@ -26,19 +24,22 @@ const splitSub = new SplitText(".hero-sub", { type: "chars" });
     .from(splitHeading.chars, {
       duration: 1,
       filter: "blur(18px)",
-      scale: 0.9,
       autoAlpha: 0,
       stagger: {
         each: 0.01,
         from: "random",
       }
     }, "<25%")
-    .from('.hero-top-block > *', { duration: 2, opacity: 0, ease: 'power3.out' },"<79%")
-    document.querySelector(".loader").remove();
+    .from('.hero-top-block > *', { duration: 2, opacity: 0, ease: 'power3.out' },"<69%")
+    .from('.hero-background-video', { duration: 2.6, clipPath: 'inset(50% round 1rem)', ease: 'expo.inOut' }, "<")
+    .from('.bottom-wrap, .right-bar', { duration: 1, opacity: 0, ease: 'power3.out' },"<25%")
 
 });
 
+
+
 //------------------ Kinetic ----------------//
+
 
 const n = 19
 const rots = [
@@ -73,7 +74,7 @@ for (let i=0; i<n; i++){
     duration:2
   })
   .fromTo(cube.querySelectorAll('.face'), {
-    color: (j) => 'rgb(19, 19, 21, ' + (100 * [rots[3].a, rots[0].a, rots[1].a][j]) + '%)'  // Noir #131315
+    // color: (j) => 'rgb(19, 19, 21, ' + (100 * [rots[3].a, rots[0].a, rots[1].a][j]) + '%)'  // Noir #131315
   }, {
     color: (j) => 'rgb(244, 243, 227, ' + (100 * [rots[0].a, rots[1].a, rots[2].a][j]) + '%)' // Blanc #f4f3e3
   }, 0)
@@ -96,34 +97,32 @@ window.onload = window.onresize = ()=> {
 }
 
 //----------------- DRAG --------------//
-gsap.utils.toArray("#Drag").forEach((drag) => {
-  let moodboard = document.querySelector(".inner-moodboard");
 
 
-  Draggable.create(drag, {
-    bounds:moodboard,
-    inertia: true,
-    dragClickables: true,
+  gsap.utils.toArray("#Drag").forEach((drag) => {
+    let moodboard = document.querySelector(".inner-moodboard");
+
+    Draggable.create(drag, {
+      bounds: moodboard,
+      inertia: true,
+      dragClickables: true,
+    });
   });
-});
 
-// --------------DRAG-Animation-ScrollTrigger-------------//
+  gsap.from("#Drag", {
+    scrollTrigger: {
+      trigger: ".mood-wrapper",
+      start: "top 40%",
+    },
+    duration: 1,
+    left: "25%",
+    top: "25%",
+    scale: 0,
+    opacity: 0,
+    stagger: 0.03,
+    ease: "power2.out",
+  });
 
-gsap.from("#Drag", {
-  scrollTrigger: {
-    trigger: ".mood-wrapper",
-    start:"top 40%",
-    // markers:'true',
-  },
-  duration: 1,
-  left: "25%",
-   top: "25%",
-  scale: 0,
-  opacity: 0,
-  stagger:0.03,
-  ease: "power2.out",
-
-});
 
 
 

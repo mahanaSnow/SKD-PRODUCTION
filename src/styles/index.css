@@ -112,16 +112,16 @@ li img {
   justify-content: space-between;
   align-items: stretch;
   margin-top: 0;
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
   background: linear-gradient(
     to bottom,
-    #ff0b17 0%,
-    #97011c 50%,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
     transparent 50%,
     transparent 100%
   );
   background-size: 100% 200%;
-    background-position: 0 100%;
+  background-position: 0 100%;
   transition: background-position 0.5s ease;
 }
 
@@ -129,8 +129,9 @@ li img {
   background-position: 0 0;
 }
 
-/* ------------ KINETIC --------------*/
 
+
+/* ------------ KINETIC --------------*/
 
 .pov {
   width:100%;
@@ -161,9 +162,7 @@ li img {
   display: flex;
   align-items: center;
   justify-content: center;
-/*   letter-spacing:-1px; */
   backface-visibility: hidden;
-/*   overflow:hidden; */
 }
 
 
@@ -224,3 +223,6 @@ body.dragging {
   touch-action: none;
   overflow: hidden;
 }
+
+
+/*-----------------------HERO DECTION ---------------------*/
