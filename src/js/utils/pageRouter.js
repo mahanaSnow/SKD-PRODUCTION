@@ -14,20 +14,17 @@ export function initPageRouter() {
 
   const pageName = pageWrapper.getAttribute("data-page-name");
 
-  // Initialize general animations for all pages
-  initAllPage();
+  // Initialise les animations globales pour toutes les pages
+  import("../pages/all").then((module) => module.initAllPage());
 
-  // Mapping of page names to their respective starter functions
+  // Import dynamique basé sur `data-page-name`
   const pageStarters = {
-    home: initHomePage,
-    about: initAboutPage,
-    // Add additional page starters here
+    home: () => import(`../pages/${pageName}.js`).then((module) => module.initHomePage()),
+    about: () => import(`../pages/${pageName}.js`).then((module) => module.initAboutPage()),
   };
 
-  const starterFunction = pageStarters[pageName];
-
-  if (starterFunction) {
-    starterFunction();
+  if (pageStarters[pageName]) {
+    pageStarters[pageName]();
   } else {
     console.warn(`No specific animations found for page: ${pageName}`);
   }
