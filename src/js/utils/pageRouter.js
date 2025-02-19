@@ -1,9 +1,3 @@
-import { initAllPage } from "../pages/all";
-import { initHomePage } from "../pages/home";
-import { initAboutPage } from "../pages/about";
-
-// Initializes page-specific files based on the data-page-name attribute.
-
 export function initPageRouter() {
   const pageWrapper = document.querySelector("[data-page-name]");
 
@@ -14,20 +8,26 @@ export function initPageRouter() {
 
   const pageName = pageWrapper.getAttribute("data-page-name");
 
-  // Initialize general animations for all pages
-  initAllPage();
+  // Charger les animations globales (si besoin)
+  import("../pages/all/index.js")
+    .then((module) => module.initAllPage())
+    .catch((err) => console.error("Error loading global animations:", err));
 
-  // Mapping of page names to their respective starter functions
+  // Import dynamique basé sur `data-page-name`
   const pageStarters = {
-    home: initHomePage,
-    about: initAboutPage,
-    // Add additional page starters here
+    home: () =>
+      import("../pages/home/index.js")
+        .then((module) => module.initHomePage())
+        .catch((err) => console.error("Error loading Home page:", err)),
+
+    about: () =>
+      import("../pages/about/index.js")
+        .then((module) => module.initAboutPage())
+        .catch((err) => console.error("Error loading About page:", err)),
   };
 
-  const starterFunction = pageStarters[pageName];
-
-  if (starterFunction) {
-    starterFunction();
+  if (pageStarters[pageName]) {
+    pageStarters[pageName]();
   } else {
     console.warn(`No specific animations found for page: ${pageName}`);
   }

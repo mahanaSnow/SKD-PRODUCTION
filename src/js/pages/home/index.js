@@ -1,5 +1,5 @@
 // import animations file entry path
-import { initHomeAnimation } from "../../animations/home/index.js";
+import { initHomeAnimation } from "../../animations/home";
 
 //import components file entry path
 
