@@ -1,6 +1,6 @@
-import { initHomeStarter } from "./components/starter";
+import { initHomeStarter } from "./components/starter/index.js";
 
 export function initHomeAnimation() {
+  console.log("✨ Running Home animations...");
   initHomeStarter();
 }
-console.log("Home chargé")
