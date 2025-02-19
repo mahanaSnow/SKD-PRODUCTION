@@ -1,5 +1,4 @@
-console.log("🛠️ `animations/about/index.js` chargé !");
-import { initAboutStarter } from "./components/starter/index.js";
+import { initAboutStarter } from "./components/starter";
 
 export function initAboutAnimation() {
   console.log("✅ initAboutAnimation() appelé !");
