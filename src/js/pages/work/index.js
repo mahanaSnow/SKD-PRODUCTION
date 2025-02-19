@@ -1,5 +1,5 @@
 // import animations file entry path
-import { initWorkAnimation } from "../../animations/home";
+import { initWorkAnimation } from "../../animations/work";
 
 //import components file entry path
 

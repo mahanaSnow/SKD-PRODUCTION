@@ -4,7 +4,6 @@ import { initAboutPage } from "../pages/about";
 import { initWorkPage } from "../pages/work";
 
 
-
 export function initPageRouter() {
   const pageWrapper = document.querySelector("[data-page-name]");
 
@@ -22,7 +21,7 @@ export function initPageRouter() {
   const pageStarters = {
     home: initHomePage,
     about: initAboutPage,
-    Work: initWorkPage,
+    work: initWorkPage,
   };
 
   const starterFunction = pageStarters[pageName];
