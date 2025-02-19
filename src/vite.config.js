@@ -19,22 +19,19 @@
 //   },
 //   envDir: "../",
 // };
-
 import { defineConfig } from "vite";
 import path from "path";
 
 export default defineConfig({
   root: "src",
   server: {
-    cors: "true",
+    cors: true,
     hmr: {},
-    allowedHosts: [
-      "starter.ngrok.app"
-    ],
+    allowedHosts: ["starter.ngrok.app"],
   },
   build: {
     minify: true,
-    outDir: "../dist",
+    outDir: "../src/dist",
     emptyOutDir: true,
     rollupOptions: {
       input: "/js/index.js",
@@ -45,7 +42,6 @@ export default defineConfig({
       },
     },
   },
-  envDir: "../",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
